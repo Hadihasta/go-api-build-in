@@ -1,0 +1,8 @@
+$ go run cmd/api/*.go
+2025/10/06 23:06:21 starting server on :8080
+for runing server and 
+
+
+
+curl http://localhost:8080/v1/health
+for checking health endpoint
