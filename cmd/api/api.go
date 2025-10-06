@@ -26,6 +26,8 @@ func (app *application) mount() http.Handler {
 	// return mux
 
 	r := chi.NewRouter()
+
+	r.Use(middleware.Recoverer)
 	r.Use(middleware.Logger)
 	r.Get("/health", app.healthCheckHandler)
 
