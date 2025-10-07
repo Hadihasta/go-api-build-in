@@ -4,9 +4,9 @@ services:
     image: postgres:16.3
     container_name: postgres-db
     environment:
-      POSTGRES_DB: social
+      POSTGRES_DB: socialapps
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: root
+      POSTGRES_PASSWORD: adminpassword
     networks:
       - backend
     volumes:
