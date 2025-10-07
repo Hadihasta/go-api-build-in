@@ -31,6 +31,9 @@ func main() {
 		log.Panic(err)
 	}
 
+	defer db.Close()
+	log.Println("database connected")
+
 	store := store.NewStorage(db)
 
 	app := &application{
